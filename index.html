@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RapidRide Car Rentals — Affordable Daily & Weekly Rentals</title>
+  <meta name="description" content="Rent reliable cars with transparent pricing. Daily, weekly, and monthly plans. No hidden fees. 24/7 toll‑free support." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.example.com/" />
+  <style>
+    :root{
+      --bg:#0b1020;--card:#121936;--ink:#eaf1ff;--muted:#b9c4e6;--brand:#4da3ff;--accent:#71e3a9;--error:#ff6b6b
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,16,32,.85);backdrop-filter:blur(6px);z-index:20;border-bottom:1px solid #1d2550}
+    .nav{display:flex;align-items:center;gap:16px;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px}
+    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));display:grid;place-items:center;color:#001129;font-weight:800}
+    .navlinks a{margin:0 8px}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#002015;padding:10px 14px;border-radius:12px;font-weight:700}
+    .hero{padding:48px 0 24px;display:grid;gap:22px}
+    .hero h1{font-size:clamp(28px,3.5vw,44px);line-height:1.15;margin:0}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1.2fr .8fr}}
+    .card{background:var(--card);border:1px solid #1d2550;border-radius:18px;padding:18px}
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border:1px solid #253062;border-radius:999px;font-size:12px;color:var(--muted)}
+    .tag{background:#1b234a;border-radius:8px;padding:4px 8px;font-size:12px;color:var(--muted)}
+    .fleet{display:grid;gap:16px}
+    @media(min-width:760px){.fleet{grid-template-columns:repeat(3,1fr)}}
+    .fleet .card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;border:1px solid #223068}
+    .price{font-weight:800}
+    .kpis{display:grid;gap:12px}
+    @media(min-width:760px){.kpis{grid-template-columns:repeat(4,1fr)}}
+    .kpi{background:#0d1430;border:1px solid #212b5a;border-radius:14px;padding:14px;text-align:center}
+    .kpi .big{font-size:20px;font-weight:800}
+    footer{margin-top:32px;padding:24px 0;border-top:1px solid #212b5a;color:var(--muted)}
+    .section h2{margin:8px 0 6px;font-size:26px}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:6px 0}
+    .footgrid{display:grid;gap:18px}
+    @media(min-width:920px){.footgrid{grid-template-columns:2fr 1fr 1fr}}
+    .hl{background:#0e1a44;padding:10px;border:1px dashed #2b3977;border-radius:12px}
+    .notice{padding:12px;border-radius:12px;background:#101c3e;border:1px solid #283570}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#001129;padding:10px 14px;border-radius:12px;font-weight:700}
+    .btn-outline{border:1px solid #2a376f;border-radius:12px;padding:9px 13px}
+    form{display:grid;gap:10px}
+    input,select,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #2a376f;background:#0b1434;color:var(--ink)}
+    label{font-size:14px;color:var(--muted)}
+    .disclaimer{font-size:13px;color:#96a5d6}
+    .error{color:var(--error);font-weight:700}
+    .ok{color:var(--accent);font-weight:700}
+    .sticky-call{position:fixed;right:16px;bottom:16px;z-index:30}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"RapidRide Car Rentals",
+    "url":"https://www.example.com/",
+    "telephone":"+1-844-485-2265",
+    "image":"https://www.example.com/og-car.jpg",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Replace with your full address",
+      "addressLocality":"City",
+      "addressRegion":"State",
+      "postalCode":"000000",
+      "addressCountry":"IN"
+    },
+    "openingHours":"Mo-Su 00:00-23:59",
+    "priceRange":"₹₹",
+    "areaServed":"IN"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><span class="logo">RR</span> RapidRide Car Rentals</div>
+      <nav class="navlinks">
+        <a href="#fleet">Fleet</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="tel:+18444852265">Toll‑Free: +1‑844‑485‑2265</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero grid grid-2">
+      <div class="card">
+        <span class="pill">Transparent pricing • No hidden fees</span>
+        <h1>Rent a car in minutes. Daily, weekly & monthly plans.</h1>
+        <p class="muted">100% price transparency, verified driver KYC, and 24/7 toll‑free support. Book online or call us to reserve instantly.</p>
+        <div style="display:flex;gap:10px;margin-top:8px;flex-wrap:wrap">
+          <a class="btn" href="tel:+18444852265">Call Toll‑Free +1‑844‑485‑2265</a>
+          <a class="btn-outline" href="#quote">Get an Online Quote</a>
+        </div>
+        <div class="hl" style="margin-top:12px"><strong>Important:</strong> We are an independent rental service. We are not affiliated with, endorsed by, or officially connected to any car brand or manufacturer.</div>
+      </div>
+      <div class="card">
+        <form id="quote" aria-label="Instant Quote Form" onsubmit="return handleQuote(event)">
+          <h3 style="margin:0 0 6px">Instant Quote</h3>
+          <label>Pickup city
+            <input name="city" placeholder="e.g., Kochi" required />
+          </label>
+          <label>Pickup date & time
+            <input type="datetime-local" name="start" required />
+          </label>
+          <label>Return date & time
+            <input type="datetime-local" name="end" required />
+          </label>
+          <label>Vehicle class
+            <select name="class" required>
+              <option value="Hatchback">Hatchback</option>
+              <option value="Sedan">Sedan</option>
+              <option value="SUV">SUV</option>
+              <option value="Premium">Premium</option>
+            </select>
+          </label>
+          <label>Need a chauffeur?
+            <select name="chauffeur" required>
+              <option>No</option>
+              <option>Yes</option>
+            </select>
+          </label>
+          <button class="btn" type="submit">Calculate Quote</button>
+          <div id="quoteMsg" class="muted" role="status" style="margin-top:6px"></div>
+          <p class="disclaimer">Quotes are estimates based on the inputs below and include taxes & standard insurance. Final price will be confirmed before booking.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <h2>How it Works</h2>
+      <ol class="list">
+        <li><strong>Get a quote</strong> online or by calling <a href="tel:+18444852265">+1‑844‑485‑2265</a>.</li>
+        <li><strong>Verify ID</strong> (valid licence + government ID). Security deposit may be required.</li>
+        <li><strong>Pick up / Door‑step delivery</strong> available in select cities.</li>
+        <li><strong>Return</strong> on time to avoid late fees. We re‑verify the vehicle and release your deposit.</li>
+      </ol>
+      <div class="notice" style="margin-top:10px">We show full charges before booking. No hidden fees, fuel surcharges, or forced add‑ons.</div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact & Company Details</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <p><strong>Business name:</strong> RapidRide Car Rentals (replace with your legal entity)</p>
+          <p><strong>Registered address:</strong> <em>Replace with complete postal address</em></p>
+          <p><strong>Email:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
+          <p><strong>Toll‑free:</strong> <a href="tel:+18444852265">+1‑844‑485‑2265</a></p>
+          <p class="muted">Hours: 24×7 phone support • Office visits by appointment.</p>
+          <div class="notice">Advertising disclosure: This website promotes our own rental services only. We do not broker third‑party leads.</div>
+        </div>
+        <div class="card">
+          <form id="contactForm" onsubmit="return handleContact(event)">
+            <h3>Message us</h3>
+            <label>Your name<input name="name" required /></label>
+            <label>Your email<input type="email" name="email" required /></label>
+            <label>Your phone<input name="phone" required /></label>
+            <label>Message<textarea name="msg" rows="4" required></textarea></label>
+            <button class="btn" type="submit">Send</button>
+            <div id="contactMsg" class="muted" role="status" style="margin-top:6px"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap footgrid">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="logo">RR</span> RapidRide Car Rentals</div>
+        <p class="muted">Independent rental service. Transparent pricing. 24/7 toll‑free support.</p>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <ul class="list">
+          <li><a href="#fleet">Fleet</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#terms">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <ul class="list">
+          <li><a href="tel:+18444852265">Toll‑Free +1‑844‑485‑2265</a></li>
+          <li><a href="mailto:support@example.com">support@example.com</a></li>
+          <li><span class="muted">Address: replace with full address</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap" style="margin-top:10px;color:#96a5d6;font-size:13px">© <span id="y"></span> RapidRide Car Rentals • All rights reserved.</div>
+  </footer>
+
+  <a class="cta sticky-call" href="tel:+18444852265">Call +1‑844‑485‑2265</a>
+
+  <script>
+    function handleQuote(e){
+      e.preventDefault();
+      const f=new FormData(e.target);
+      const start=new Date(f.get('start')); const end=new Date(f.get('end'));
+      const hours=Math.max(0, (end-start)/36e5);
+      if(!hours){document.getElementById('quoteMsg').innerHTML='<span class="error">Please choose a return time after pickup.</span>';return false}
+      const days=Math.ceil(hours/24)||1;
+      const cls=f.get('class');
+      const base={Hatchback:1799,Sedan:2399,SUV:3199,Premium:6999}[cls]||2399;
+      const chauffeur=f.get('chauffeur')==='Yes'?1200:0;
+      const total=days*base + (chauffeur?days*chauffeur:0);
+      const msg=`Estimated total for ${days} day(s) • ${cls}: ₹${total.toLocaleString('en-IN')} (incl. taxes & standard insurance)`;
+      document.getElementById('quoteMsg').innerHTML='<span class="ok">'+msg+'</span>';
+      return false;
+    }
+    function handleContact(e){
+      e.preventDefault();
+      document.getElementById('contactMsg').innerHTML='<span class="ok">Thanks! Your message has been recorded for a callback. We\'ll reach you shortly.</span>';
+      return false;
+    }
+    document.getElementById('y').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
